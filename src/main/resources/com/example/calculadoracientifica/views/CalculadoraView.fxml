@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns="http://javafx.com/javafx/11.0.1"
+      xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="com.example.calculadoracientifica.controller.CalculadoraController"
+      spacing="10"
+      styleClass="root">
+
+    <TextField fx:id="display" editable="false" styleClass="text-field"/>
+
+    <HBox spacing="10">
+        <!-- Números e operações -->
+        <GridPane hgap="5" vgap="5">
+            <!-- Linha 1 -->
+            <Button text="7" onAction="#handleButtonClick" styleClass="number" GridPane.columnIndex="0" GridPane.rowIndex="0"/>
+            <Button text="8" onAction="#handleButtonClick" styleClass="number" GridPane.columnIndex="1" GridPane.rowIndex="0"/>
+            <Button text="9" onAction="#handleButtonClick" styleClass="number" GridPane.columnIndex="2" GridPane.rowIndex="0"/>
+            <Button text="/" onAction="#handleButtonClick" styleClass="operation" GridPane.columnIndex="3" GridPane.rowIndex="0"/>
+            <Button text="C" onAction="#handleButtonClick" styleClass="operation" GridPane.columnIndex="4" GridPane.rowIndex="0"/>
+
+            <!-- Linha 2 -->
+            <Button text="4" onAction="#handleButtonClick" styleClass="number" GridPane.columnIndex="0" GridPane.rowIndex="1"/>
+            <Button text="5" onAction="#handleButtonClick" styleClass="number" GridPane.columnIndex="1" GridPane.rowIndex="1"/>
+            <Button text="6" onAction="#handleButtonClick" styleClass="number" GridPane.columnIndex="2" GridPane.rowIndex="1"/>
+            <Button text="*" onAction="#handleButtonClick" styleClass="operation" GridPane.columnIndex="3" GridPane.rowIndex="1"/>
+            <Button text="⌫" onAction="#handleButtonClick" styleClass="operation" GridPane.columnIndex="4" GridPane.rowIndex="1"/>
+
+            <!-- Linha 3 -->
+            <Button text="1" onAction="#handleButtonClick" styleClass="number" GridPane.columnIndex="0" GridPane.rowIndex="2"/>
+            <Button text="2" onAction="#handleButtonClick" styleClass="number" GridPane.columnIndex="1" GridPane.rowIndex="2"/>
+            <Button text="3" onAction="#handleButtonClick" styleClass="number" GridPane.columnIndex="2" GridPane.rowIndex="2"/>
+            <Button text="-" onAction="#handleButtonClick" styleClass="operation" GridPane.columnIndex="3" GridPane.rowIndex="2"/>
+            <Button text="(" onAction="#handleButtonClick" styleClass="operation" GridPane.columnIndex="4" GridPane.rowIndex="2"/>
+
+            <!-- Linha 4 -->
+            <Button text="0" onAction="#handleButtonClick" styleClass="number" GridPane.columnIndex="0" GridPane.rowIndex="3"/>
+            <Button text="." onAction="#handleButtonClick" styleClass="number" GridPane.columnIndex="1" GridPane.rowIndex="3"/>
+            <Button text="=" onAction="#handleButtonClick" styleClass="operation" GridPane.columnIndex="2" GridPane.rowIndex="3"/>
+            <Button text="+" onAction="#handleButtonClick" styleClass="operation" GridPane.columnIndex="3" GridPane.rowIndex="3"/>
+            <Button text=")" onAction="#handleButtonClick" styleClass="operation" GridPane.columnIndex="4" GridPane.rowIndex="3"/>
+        </GridPane>
+
+        <!-- Funções científicas -->
+        <GridPane hgap="5" vgap="5">
+            <!-- Linha 1 -->
+            <Button text="sin" onAction="#handleButtonClick" styleClass="scientific-button" GridPane.columnIndex="0" GridPane.rowIndex="0"/>
+            <Button text="cos" onAction="#handleButtonClick" styleClass="scientific-button" GridPane.columnIndex="1" GridPane.rowIndex="0"/>
+            <Button text="tan" onAction="#handleButtonClick" styleClass="scientific-button" GridPane.columnIndex="2" GridPane.rowIndex="0"/>
+            <Button text="√" onAction="#handleButtonClick" styleClass="scientific-button" GridPane.columnIndex="3" GridPane.rowIndex="0"/>
+
+            <!-- Linha 2 -->
+            <Button text="log" onAction="#handleButtonClick" styleClass="scientific-button" GridPane.columnIndex="0" GridPane.rowIndex="1"/>
+            <Button text="ln" onAction="#handleButtonClick" styleClass="scientific-button" GridPane.columnIndex="1" GridPane.rowIndex="1"/>
+            <Button text="x²" onAction="#handleButtonClick" styleClass="scientific-button" GridPane.columnIndex="2" GridPane.rowIndex="1"/>
+            <Button text="x^y" onAction="#handleButtonClick" styleClass="scientific-button" GridPane.columnIndex="3" GridPane.rowIndex="1"/>
+
+            <!-- Linha 3 -->
+            <Button text="π" onAction="#handleButtonClick" styleClass="scientific-button" GridPane.columnIndex="0" GridPane.rowIndex="2"/>
+            <Button text="e" onAction="#handleButtonClick" styleClass="scientific-button" GridPane.columnIndex="1" GridPane.rowIndex="2"/>
+            <Button text="n!" onAction="#handleButtonClick" styleClass="scientific-button" GridPane.columnIndex="2" GridPane.rowIndex="2"/>
+            <Button text="1/x" onAction="#handleButtonClick" styleClass="scientific-button" GridPane.columnIndex="3" GridPane.rowIndex="2"/>
+
+            <!-- Linha 4 -->
+            <Button text="Hist" onAction="#handleButtonClick" styleClass="function-button" GridPane.columnIndex="0" GridPane.rowIndex="3"/>
+            <Button text="Deg" onAction="#handleButtonClick" styleClass="function-button" GridPane.columnIndex="1" GridPane.rowIndex="3"/>
+            <Button text="Rad" onAction="#handleButtonClick" styleClass="function-button" GridPane.columnIndex="2" GridPane.rowIndex="3"/>
+            <Button text="Mod" onAction="#handleButtonClick" styleClass="function-button" GridPane.columnIndex="3" GridPane.rowIndex="3"/>
+
+            <!-- Coluna extra -->
+            <Button text="sin⁻¹" onAction="#handleButtonClick" styleClass="scientific-button" GridPane.rowIndex="0" GridPane.columnIndex="4"/>
+            <Button text="cos⁻¹" onAction="#handleButtonClick" styleClass="scientific-button" GridPane.rowIndex="1" GridPane.columnIndex="4"/>
+            <Button text="tan⁻¹" onAction="#handleButtonClick" styleClass="scientific-button" GridPane.rowIndex="2" GridPane.columnIndex="4"/>
+            <Button text="xʸ" onAction="#handleButtonClick" styleClass="scientific-button" GridPane.rowIndex="3" GridPane.columnIndex="4"/>
+        </GridPane>
+    </HBox>
+</VBox>

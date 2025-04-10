@@ -1,0 +1,70 @@
+/* Fundo da calculadora */
+.root {
+    -fx-background-color: #f0f2f5;
+    -fx-font-family: "Segoe UI", sans-serif;
+}
+
+/* Display */
+.text-field {
+    -fx-font-size: 28px;
+    -fx-pref-height: 70px;
+    -fx-background-color: white;
+    -fx-border-color: #ccc;
+    -fx-border-radius: 10px;
+    -fx-background-radius: 10px;
+    -fx-padding: 10px;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.1), 10, 0, 0, 2);
+}
+
+/* Estilo geral dos botões */
+.button {
+    -fx-font-size: 18px;
+    -fx-min-width: 60px;
+    -fx-min-height: 50px;
+    -fx-background-color: #e0e0e0;
+    -fx-text-fill: #333;
+    -fx-background-radius: 12px;
+    -fx-cursor: hand;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.05), 2, 0, 0, 1);
+    -fx-border-color: transparent;
+}
+
+/* Hover para qualquer botão */
+.button:hover {
+    -fx-background-color: #d0d0d0;
+}
+
+/* Botões de operação (ex: + - / x =) */
+.operation {
+    -fx-background-color: #ff9800;
+    -fx-text-fill: white;
+}
+
+/* Botões numéricos */
+.number {
+    -fx-background-color: #f5f5f5;
+    -fx-text-fill: #333;
+}
+
+/* Botões científicos */
+.scientific-button {
+    -fx-background-color: #5f9ea0;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+}
+
+/* Hover para botão científico */
+.scientific-button:hover {
+    -fx-background-color: #538d8e;
+}
+
+/* Deg, Rad, Mod etc */
+.function-button {
+    -fx-background-color: #a9a9a9;
+    -fx-text-fill: white;
+}
+
+/* Hover especial para botões de função */
+.function-button:hover {
+    -fx-background-color: #8a8a8a;
+}
