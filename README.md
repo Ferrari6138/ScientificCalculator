@@ -45,13 +45,13 @@ A lógica de cálculo é feita através de uma classe chamada `MathParser`, resp
 
 ## 📂 Estrutura do Projeto
 
-calculadora-cientifica/ 
-├── controller/ 
-│ └── CalculadoraController.java 
-├── utils/ 
-│ └── MathParser.java 
-├── view/ 
-│ └── calculadora.fxml 
+calculadora-cientifica/ <br>
+├── controller/ <br>
+│ └── CalculadoraController.java <br>
+├── utils/ <br>
+│ └── MathParser.java <br>
+├── view/ <br>
+│ └── calculadora.fxml <br>
 └── Main.java 
 
 ---
